@@ -1,0 +1,55 @@
+body {
+  background-image: url("redging.jpeg");
+  color: #fdd9b2; 
+  font-family: "Libertinus Serif";
+  margin-top: 140px; /* Adjust based on header height */
+}
+
+mark {
+  background-color: #b0291e; /* Choose your desired highlight color */
+}
+
+.center-text {
+  text-align: center;
+}
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  padding-bottom: 20px;
+  background: #801612;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+nav a {
+  color: #fdd9b2; 
+  text-decoration: none;
+} 
+
+#flipbook {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.page {
+  width: 400px;   /* half of book width */
+  height: 500px;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  pointer-events: none; /* allow clicks to reach page */
+}
+
