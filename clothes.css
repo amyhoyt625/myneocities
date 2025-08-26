@@ -1,0 +1,146 @@
+body {
+  background-image: url("rah.jpg");
+  color: #fdd9b2;
+  font-family: "Libertinus Serif";
+  margin: 0;                         /* Removes default body margin */
+}
+
+mark {
+  background-color: #7f1612; /* Choose your desired highlight color */
+  color: #fdd9b2; /* Optional: adjust text color for contrast */
+}
+
+.center-text {
+  text-align: center;
+}
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  padding-bottom: 20px;
+  background: #801612;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 44px;
+  color:  #fdd9b2;
+}
+
+h3 {
+  font-size: 30px;
+  color: #d15f6c;
+}
+
+
+body {
+  margin-top: 140px; /* Adjust based on header height */
+}
+
+nav a {
+  text-decoration: none;
+  color:#fdd9b2; 
+  font-family: "Libertinus Serif";
+  margin-bottom: 0;
+}
+
+label {
+  color: #123d08;
+}
+
+input[type="text"],
+textarea {
+  background-color: #93aa44;
+  color: #6d4643;
+  font-family: "Libertinus Serif";
+  border: 2px solid #999;
+  border-color:  #6d4643;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+    
+.container {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      gap: 50px;               /* Adds space between form and image */
+    }
+    
+    
+    
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  width: 100%; /* Adjust as needed */
+  height: auto;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 10px; /* Adjust position as needed */
+  left: 10px;
+  background-color: rgba(127, 22, 18, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  font-family: monospace;
+  z-index: 10;
+}
+
+.image-container:hover .info-box {
+  display: block; /* Show the info box on hover */
+}
+
+
+
+
+/* Container for the entire marquee */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Wrapper to hold the duplicated content */
+.marquee-wrapper {
+  display: flex; /* Arranges the image sets side-by-side */
+  animation: scroll-left 15s linear infinite;
+}
+
+/* Style for each set of images */
+.image-set {
+  display: flex;
+  flex-shrink: 0; /* Prevents the image set from shrinking */
+}
+
+/* Style for the images within the set */
+.image-set img {
+  display: block;
+}
+
+/* Define the animation */
+@keyframes scroll-left {
+  from {
+    /* Start position: 0% translation */
+    transform: translateX(0);
+  }
+  to {
+    /* End position: Translate the entire wrapper left by 50% */
+    transform: translateX(-50%);
+  }
+}
+
+
+
+    
