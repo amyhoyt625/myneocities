@@ -1,0 +1,94 @@
+body {
+  background: #f2e8cf;
+  color: #a7c957;
+  
+}
+
+mark {
+  background-color: #e07a5f; /* Choose your desired highlight color */
+  color: #6d4643; /* Optional: adjust text color for contrast */
+}
+
+.center-text {
+  text-align: center;
+}
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  background-color: #006400;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 44px;
+  color: #006400;
+  font-family: "Montserrat";
+}
+
+body {
+  margin-top: 140px; /* Adjust based on header height */
+}
+
+p {
+  color: #6d4643;
+  font-size: 16px;
+}
+
+
+nav a {
+  color: #a7c957;
+  text-decoration: none;
+  font-family: "Libertinus Serif";
+}
+
+label {
+  color: #123d08;
+}
+
+input[type="text"],
+textarea {
+  background-color: #006400;
+  color: #6d4643;
+  font-family: "Libertinus Serif";
+  border: 5px solid #999;
+  border-color: #a7c957;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+
+img {
+      width: 100%; /* Make the image span the full width */
+      height: auto; /* Maintain the aspect ratio */
+    }
+    
+.container {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      gap: 50px;               /* Adds space between form and image */
+    }
+    
+    
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+    
+    
+    
+    
