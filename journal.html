@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>journal page</title>
+<link rel="icon" type="image/png" href="plantemoji.png">
+</head>
+
+  <body>
+  <link rel="stylesheet" href="journal.css">
+<!-- header/banner -->  
+<header>
+  <h2 style="padding-left: 20px;"> yamyam </h2>
+  <nav>
+    <a style="padding-left: 20px; " href="index.html">Home</a> |
+    <a href="plant.html">Plants</a> |
+    <a href="clothes.html ">My Clothes</a> |
+    <a href="travels.html ">Travels</a> |
+    <a href="pictures.html ">Pictures</a> |
+    <a href="music.html ">Music</a> |
+    <a href="videos.html"> Videos</a> |
+    <a href="scrapbook.html">Digital Scrap Book</a> |
+    <a href="journal.html">Journal</a> 
+  </nav>
+</header>
+
+<h1 style= "color: #e0d7b5; position: absolute; top: 450px; left: 500px;"> <mark> Click me to open! </mark> </h1>
+
+
+  <!-- jQuery and Turn.js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+
+
+<div id="flipbook">
+  <div class="page"><img src="cover.png" alt="Page 1"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 2"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 3"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 4"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 5"></div>
+  <div class="page"><img src="cover.png" alt="Page 6"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 7"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 8"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 9"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 10"></div>
+  <div class="page"><img src="cover.png" alt="Page 11"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 12"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 13"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 14"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 15"></div>
+  <div class="page"><img src="cover.png" alt="Page 16"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 17"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 18"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 19"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 20"></div>
+  <div class="page"><img src="cover.png" alt="Page 21"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 22"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 23"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 24"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 25"></div>
+  <div class="page"><img src="cover.png" alt="Page 26"></div>
+  <div class="page"><img src="page2.jpg" alt="Page 27"></div>
+  <div class="page"><img src="page3.jpg" alt="Page 28"></div>
+  <div class="page"><img src="page4.jpg" alt="Page 29"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 30"></div>
+  <div class="page"><img src="page5.jpg" alt="Page 31"></div>
+</div>
+
+<script>
+  $(function() {
+    // initialize the book
+    $("#flipbook").turn({
+      width: 1100,
+      height: 800,
+      autoCenter: true,
+      display: "double"
+    });
+
+    // manual click handler (left = prev, right = next)
+    $("#flipbook").on("click", function(e) {
+      var book = $(this);
+      var offset = book.offset();
+      var width = book.width();
+      var x = e.pageX - offset.left;
+
+      if (x < width / 2) {
+        book.turn("previous");
+      } else {
+        book.turn("next");
+      }
+    });
+  });
+</script>
+
+</body>
+
