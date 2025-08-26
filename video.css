@@ -1,0 +1,67 @@
+body {
+  background-image: url("gr.jpg");
+  color: #a7c957;
+  font-family: "Libertinus Serif";
+  margin: 0;                         /* Removes default body margin */
+}
+
+mark {
+  background-color: #e1e4db; /* Choose your desired highlight color */
+  color: #006400; /* Optional: adjust text color for contrast */
+}
+
+.center-text {
+  text-align: center;
+}
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  padding-bottom: 20px;
+  background: #006400;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 44px;
+  color:  #006400;
+  padding-left: 20px;
+}
+
+p{
+  color:  #006400;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+h3 {
+  font-size: 30px;
+  color: #006400;
+  padding-left: 20px;
+}
+
+
+body {
+  margin-top: 140px; /* Adjust based on header height */
+}
+
+nav a {
+  text-decoration: none;
+  color: #a7c957; 
+  font-family: "Libertinus Serif";
+  margin-bottom: 0;
+}
+
+label {
+  color: #123d08;
+}
+
+.box {
+  background-color:  #e1e4db;
+  width: 600px;
+  height: 150px;
+  font-size: 18px;
+}
+
