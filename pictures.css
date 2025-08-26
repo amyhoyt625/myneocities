@@ -1,0 +1,51 @@
+body {
+  color: #a7c957; 
+  background-image: url("cork.jpg");
+  background-size: 100% auto;   /* stretch full width, keep height proportional */
+  background-repeat: repeat-y; /* only repeats vertically */
+  background-position: top center;
+  font-family: "Libertinus Serif";
+}
+
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  background-color: #006400;
+  padding-bottom: 20px;
+}
+
+mark {
+  background-color: #bf9845; /* Choose your desired highlight color */
+  color: #f4d06f; /* Optional: adjust text color for contrast */
+}
+
+.center-text {
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  color: #f4d06f;
+}
+
+nav a {
+  color: #a7c957; 
+  text-decoration: none;
+}
+
+input[type="text"],
+textarea {
+  background-color: #B4C292;
+  color: #3B3923;
+  font-family: "Libertinus Serif";
+  border: 2px solid #999;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
