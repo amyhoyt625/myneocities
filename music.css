@@ -1,0 +1,153 @@
+body {
+  background-image: url("red.jpg");
+  color: #fdd9b2;
+  font-family: "Libertinus Serif";
+  margin: 0;                         /* Removes default body margin */
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+header {
+  position: fixed;         /* Keeps it stuck to the top */
+  top: 0;                  /* Aligns it to the top edge */
+  left: 0;                 /* Aligns it to the left edge */
+  width: 100vw;            /* Full viewport width */
+  z-index: 1000;           /* Keeps it above other elements */
+  padding-bottom: 20px;
+  background: #801612;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 44px;
+  color:  #dcc29f;
+}
+
+h3 {
+  font-size: 20px;
+  color: #dcc29f;
+}
+
+body {
+  margin-top: 140px; /* Adjust based on header height */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fdd9b2; 
+  font-family: "Libertinus Serif";
+  margin-bottom: 0;
+}
+
+label {
+  color: #123d08;
+}
+
+input[type="text"],
+textarea {
+  background-color: #93aa44;
+  color: #6d4643;
+  font-family: "Libertinus Serif";
+  border: 2px solid #999;
+  border-color:  #6d4643;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+img {
+      width: 100%; /* Make the image span the full width */
+      height: auto; /* Maintain the aspect ratio */
+    }
+    
+.container {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      gap: 50px;               /* Adds space between form and image */
+    }
+    
+.musicbox {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 600px;
+  overflow: scroll;
+  background-color: #880910;
+  color: #dcc29f;
+}
+
+.albumbox {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 500px;
+  height: 470px;
+  overflow: scroll;
+  background-color: #880910;
+  color: #dcc29f;
+}
+
+.podcastbox {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 320px;
+  height: 470px;
+  overflow: scroll;
+  background-color: #880910;
+  color: #dcc29f;
+}
+
+.musicbox iframe {
+  display: block;   /* removes inline whitespace gaps */
+  margin: 0;
+  padding: 0;
+  border: none;     /* optional, removes default borders */
+}
+
+.box {
+  background-color: #801612;
+  width: 310px;
+  height: 360px;
+  color: #dcc29f;              /* text color */
+  font-size: 18px;
+  padding-left: 10px;  
+}
+
+.box1 {
+  background-color: #801612;
+  width: 310px;
+  height: 650px;
+  color: #dcc29f;              /* text color */
+  font-size: 18px;
+  padding-left: 10px;  
+}
+
+.box2 {
+  background-color: #801612;
+  width: 310px;
+  height: 100px;
+  color: #dcc29f;              /* text color */
+  font-size: 18px;
+  padding-left: 10px;  
+}
+
+.verticalline {
+  height: 700px;
+  width: 10px;
+  background-color: #959595;
+  border: 5px solid;
+  border-color: black; 
+}
+
+
+    
+    
+    
